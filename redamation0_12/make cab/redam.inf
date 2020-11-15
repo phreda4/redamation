@@ -1,0 +1,36 @@
+[Version]
+Signature="$Windows NT$"
+Provider="RedaMan"
+CESignature="$Windows CE$"
+
+[CEStrings]
+AppName="RedaMation"
+InstallDir=%CE1%\..\reda
+
+[CEDevice]
+VersionMin=3.00
+VersionMax=4.99
+
+[DefaultInstall]
+CEShortcuts=Shortcuts
+CopyFiles=Files.Common
+
+[SourceDisksNames]
+1=,"Common1",,""
+
+[SourceDisksFiles]
+redamation.exe=1
+redamation.ini=1
+skin1.png=1
+
+[DestinationDirs]
+Files.Common=0,%InstallDir%
+Shortcuts=0,%CE2%\Start Menu
+
+[Files.Common]
+redamation.exe,,,0
+redamation.ini,,,0
+skin1.png,,,0
+
+[Shortcuts]
+RedaMation,0,redamation.exe,%CE11%

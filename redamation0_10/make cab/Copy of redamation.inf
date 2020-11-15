@@ -1,0 +1,35 @@
+[Version]
+Signature="$Windows NT$"
+Provider="DimensionReda"
+CESignature="$Windows CE$"
+
+[CEStrings]
+AppName="Redamation"
+InstallDir=%CE1%\..\reda
+
+[CEDevice]
+VersionMin=3.00
+VersionMax=4.99
+
+[DefaultInstall]
+CEShortcuts=Shortcuts
+CopyFiles=Files.Common
+
+[SourceDisksNames]
+1=,"Common1",,""
+
+[SourceDisksFiles]
+redamation.exe=1
+pez.rdm=1
+
+[DestinationDirs]
+Files.Common=0,%InstallDir%
+Shortcuts=0,%CE2%\Start Menu
+
+[Files.Common]
+redamation.exe,,,0
+pez.rdm,,,0
+
+[Shortcuts]
+redamation,0,redamation.exe,%CE11%
+
